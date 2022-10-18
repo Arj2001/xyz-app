@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AddStudentComponent } from './add-student/add-student.component';
 
 const addRoute:Routes = [
   {
@@ -15,6 +16,9 @@ const addRoute:Routes = [
   },
   {
     path:"home",component:HomeComponent
+  },
+  {
+    path:"add-student",component:AddStudentComponent
   }
 ]
 
@@ -23,7 +27,8 @@ const addRoute:Routes = [
     AppComponent,
     LoginComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    AddStudentComponent
   ],
   imports: [
     BrowserModule,
