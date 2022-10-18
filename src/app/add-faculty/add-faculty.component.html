@@ -1,0 +1,50 @@
+<app-navbar></app-navbar>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col xxl-3">
+                    <label for="" class="label-control">Name</label>
+                    <input type="text" class="form-control" name="name" [(ngModel)]="name">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col xxl-3">
+                    <label for="" class="label-control">Department</label>
+                    <select  id="" class="form-control" name="department" [(ngModel)]="department">
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Civil Engineer">Civil Engineer</option>
+                        <option value="Electrical Engineer">Electrical Engineer</option>
+                        <option value="Mechanical Engineer">Mechanical Engineer</option>
+                    </select>
+                </div>
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col xxl-3">
+                    <label for="" class="label-control">Designation</label>
+                    <input type="text" class="form-control" name="designation" [(ngModel)]="designation">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col xxl-3">
+                    <label for="" class="label-control">Date of Birth</label>
+                    <input type="date" class="form-control" name="dob" [(ngModel)]="dob">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col xxl-3">
+                    <label for="" class="label-control">Education Qualification</label>
+                    <input type="text" class="form-control" name="eduQuali" [(ngModel)]="eduQuali">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col xxl-3">
+                    <label for="" class="label-control">Mobile Number</label>
+                    <input type="text" class="form-control" name="phone" [(ngModel)]="phone">
+                </div>
+                
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col xxl-3">
+                    <label for="" class="label-control">Date of Joining</label>
+                    <input type="date" class="form-control" name="doj" [(ngModel)]="doj">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-8 col-lg-8 col-xl-6 col xxl-6">
+                    <label for="" class="label-control">Address</label>
+                    <textarea class="form-control" id="" cols="30" rows="1" name="address" [(ngModel)]="address"></textarea>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col xxl-12">
+                    <button class="btn btn-success" (click)="readValue()">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
