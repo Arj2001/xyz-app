@@ -11,6 +11,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AddStudentComponent } from './add-student/add-student.component';
 import { ViewStudentComponent } from "./view-student/view-student.component";
 import { AddFacultyComponent } from './add-faculty/add-faculty.component';
+import { ViewFacultyComponent } from './view-faculty/view-faculty.component';
 
 const addRoute:Routes = [
   {
@@ -27,6 +28,9 @@ const addRoute:Routes = [
   },
   {
     path:"add-faculty",component:AddFacultyComponent
+  },
+  {
+    path:"view-faculty",component:ViewFacultyComponent
   }
 ]
 
@@ -38,7 +42,8 @@ const addRoute:Routes = [
     NavbarComponent,
     AddStudentComponent,
     ViewStudentComponent,
-    AddFacultyComponent
+    AddFacultyComponent,
+    ViewFacultyComponent
   ],
   imports: [
     BrowserModule,
