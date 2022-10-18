@@ -18,7 +18,7 @@ export class LoginComponent implements OnInit {
       "username":this.username,
       "password":this.password,
     }
-    if(this.username == "admin",this.password == "admin"){
+    if(this.username == "admin" && this.password == "admin"){
       this.myRoute.navigate(["/home"]) 
       this.username= ""
       this.password= ""
