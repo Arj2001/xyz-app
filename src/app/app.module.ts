@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AddStudentComponent } from './add-student/add-student.component';
 import { ViewStudentComponent } from "./view-student/view-student.component";
+import { AddFacultyComponent } from './add-faculty/add-faculty.component';
 
 const addRoute:Routes = [
   {
@@ -24,6 +25,9 @@ const addRoute:Routes = [
   {
     path:"view-student",component:ViewStudentComponent
   },
+  {
+    path:"add-faculty",component:AddFacultyComponent
+  }
 ]
 
 @NgModule({
@@ -33,7 +37,8 @@ const addRoute:Routes = [
     HomeComponent,
     NavbarComponent,
     AddStudentComponent,
-    ViewStudentComponent
+    ViewStudentComponent,
+    AddFacultyComponent
   ],
   imports: [
     BrowserModule,
