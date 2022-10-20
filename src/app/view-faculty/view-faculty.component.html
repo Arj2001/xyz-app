@@ -3,6 +3,7 @@
 <div class="container-fluid my-5">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+          <div class="table-responsive">
             <table class="table table-striped">
                 <thead>
                   <tr>
@@ -14,6 +15,7 @@
                     <th scope="col">Phone</th>
                     <th scope="col">Date of Joining</th>
                     <th scope="col">Address</th>
+                    <th></th>
                   </tr>
                 </thead>
                 <tbody class="table-group-divider">
@@ -26,9 +28,12 @@
                     <td> {{i.phone}} </td>
                     <td> {{i.doj}} </td>
                     <td> {{i.address}} </td>
+                    <td> <button class="btn btn-danger" (click)="deleteFacultyData(i.id)">Delete</button> </td>
                   </tr>
                 </tbody>
               </table>
+          </div>
+            
         </div>
     </div>
 </div>

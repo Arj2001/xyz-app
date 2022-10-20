@@ -9,6 +9,21 @@ export class ApiService {
   constructor(private http:HttpClient) { }
 
   getStudentData=()=>{
-    return this.http.get("http://localhost:8080/student");
+    return this.http.get("http://localhost:8080/studentView");
+  }
+  postStudentData=(data: any)=>{
+    return this.http.post("http://localhost:8080/studentAdd",data)
+  }
+  deleteStudentData=(id:any)=>{
+    return this.http.post("http://localhost:8080/studentDelete",id)
+  }
+  getFacultyData=()=>{
+    return this.http.get("http://localhost:8080/facultyView");
+  }
+  postFacultyData=(data: any)=>{
+    return this.http.post("http://localhost:8080/facultyAdd",data)
+  }
+  deleteFacultyData=(id:any)=>{
+    return this.http.post("http://localhost:8080/facultyDelete",id)
   }
 }
