@@ -26,4 +26,10 @@ export class ApiService {
   deleteFacultyData=(id:any)=>{
     return this.http.post("http://localhost:8080/facultyDelete",id)
   }
+  searchFacultyData=(search:any)=>{
+    return this.http.post("http://localhost:8080/searchFaculty",search)
+  }
+  searchStudentData=(search:any)=>{
+    return this.http.post("http://localhost:8080/searchStudent",search)
+  }
 }
